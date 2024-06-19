@@ -1,11 +1,11 @@
-version: '3'
+version: '3.9'
 
 services:
   roachN:
     secrets:
       - SUPER_SECRET
     environment:
-      - COCKROACH_JOIN=${COCKROACH_JOIN-old}
+      - COCKROACH_JOIN200=${COCKROACH_JOIN-old}
 
 secrets:
   SUPER_SECRET:
