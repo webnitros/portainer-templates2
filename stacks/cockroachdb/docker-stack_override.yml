@@ -1,10 +1,6 @@
 version: '3'
 
 services:
-  roach1:
-    environment:
-      - COCKROACH_JOIN=${COCKROACH_JOIN-old}
-
   roachN:
     environment:
       - COCKROACH_JOIN=${COCKROACH_JOIN-old}
