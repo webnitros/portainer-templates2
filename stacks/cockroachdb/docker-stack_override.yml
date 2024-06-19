@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  roach1:
+    environment:
+      - COCKROACH_JOIN=roachN
+
+  roachN:
+    environment:
+      - COCKROACH_JOIN=roachN
