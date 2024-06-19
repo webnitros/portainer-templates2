@@ -2,5 +2,11 @@ version: '3'
 
 services:
   roachN:
+    secrets:
+      - SUPER_SECRET
     environment:
       - COCKROACH_JOIN=${COCKROACH_JOIN-old}
+
+secret:
+  SUPER_SECRET:
+    external: true
