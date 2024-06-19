@@ -7,6 +7,6 @@ services:
     environment:
       - COCKROACH_JOIN=${COCKROACH_JOIN-old}
 
-secret:
+secrets:
   SUPER_SECRET:
     external: true
